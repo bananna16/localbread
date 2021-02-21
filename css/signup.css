@@ -14,27 +14,29 @@
 }
 
 .form-box{
-    top: 0px;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 380px;
-    height: 500px;
+    height: 550px;
     position: absolute;
     margin: 6% auto;
     background: #fff;
     padding: 10px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 25px;
 }
 
 .signup-button{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, -50%);
     /*
     top: 90%;
     right: 50%;
     transform: translate(-20px, 0%);
     */
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, -50%);
     position: absolute;
     background-color: #DAB076;
     border-style: solid;

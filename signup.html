@@ -4,69 +4,67 @@
 <head>
   <title>Local Bread Sign-Up</title>
   <meta charset="utf-8">
+  <link rel="icon" href="images/LB-icon.png">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/signup.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+  <script src="js/password.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="js/firebase.js"></script>
 </head>
 
 <body>
   <!-- This is a comment -->
   <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
-  <nav class="navbar navbar-inverse" style="margin: 0">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">Local Bread</a>
-      </div>
-      <ul class="nav navbar-nav nav-custom">
-        <!-- You want to give the active class to the page that you are on -->
-        <li><a href="map.html">Map</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-3">
+    <!--<a class="navbar-brand" href="index.html">Local Bread</a> -->
+    <a class="navbar-brand" href="index.html" style="width: 20%;"><img id="icon" src="images/locaLBread-logo.png"
+        class="d-inline" alt="Official LocalBread logo"></a>
+    <ul class="nav navbar-nav nav-custom ml-auto">
+      <!-- You want to give the active class to the page that you are on -->
+      <li class=" nav-item btn pl-4"><a class="nav-link d-flex" href="map.html">Map</a></li>
+      <li class="nav-item btn"><a class="nav-link d-flex" href="about.html">About</a></li>
+      <li class="nav-item btn auto"><a class="nav-link d-flex" href="login.html">Login</a></li>
+    </ul>
   </nav>
-  <div class="container" style="padding: 0">
-    <img class="startimage" src="images/LB-desktop-startup-bg.png" />
 
+  <div class="align">
+
+    <img class="startimage" src="images/LB-desktop-startup-bg.png" />
     <div class="form-box">
-        <h3>Sign-Up</h3>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name"><br><br>
-            <label for="org">Orginization:</label>
-            <input type="text" id="org"><br><br>
-            <label for="email">E-mail:</label><br>
-            <input type="text" id="email"><br><br>
-            <label for="pw">Password:</label>
-            <input type="text" id="pw"><br><br>
-            <label for="confirmpw">Confirm Password:</label><br>
-            <input type="text" id="confirmpw"><br>
-        </form>
-        <a href="foodform.html">
-            <button class="signup-button">
-              Sign-Up!
-            </button>
-        </a>
+      <h3>Sign-Up</h3>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="org">Organization:</label>
+        <input type="text" id="org" name="org"><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="pw"><br><br>
+        <label for="confirmpw">Confirm Password:</label><br>
+        <input type="password" id="confirmpw" name="confirmpw"><br>
+        <input type="checkbox" id="showpw" onclick="showPass()">
+        <label for="showpw">Show password</label><br>
+      </form>
+      <a href="foodform.html">
+        <button class="signup-button">
+          Sign-Up!
+        </button>
+      </a>
     </div>
   </div>
 
-
-  <script src="js/firebase.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.2.9/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>

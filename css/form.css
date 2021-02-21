@@ -1,33 +1,77 @@
-#startimage {
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
 }
 
-.questions {
-    position: absolute;
-    width: 60%;
-    top: 20%;
-    left: 20%;
-}
-
-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-text {
-    position: absolute;
-    top: 20%;
+.form-box{
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -150%);
-    -ms-transform: translate(-50%, -50%);
-    font-size: 40px;
+    transform: translate(-50%, 0%);
+    width: 380px;
+    height: 550px;
+    position: absolute;
+    margin: 6% auto;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 25px;
+}
 
+.signup-button{
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #DAB076;
+    border-style: solid;
+    border-color: #7E5F1F;
+    width: 100px;
+    height: 40px;
+    color: #513700;
+    border-radius: 10px;
+}
+
+.form-box h3{
+    text-align: center;
+}
+
+#org {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#address {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#info {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#food {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#time {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#logreg {
+    position: absolute;
+    width: 100%;
 }

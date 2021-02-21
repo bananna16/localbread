@@ -1,32 +1,25 @@
-*{
+body{
     margin: 0;
     padding: 0;
 }
 
-.img{
-    height: 100%;
-    width: 100%;
-    background-image: "images/LB-desktop-startup-bg.png";
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-}
-
 .form-box{
-    top: 0px;
+
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 380px;
-    height: 480px;
+    height: 450px;
     position: absolute;
     margin: 6% auto;
     background: #fff;
     padding: 10px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 25px;
 }
 
 .login-button{
-    top: 220px;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, 0%);
     position: absolute;
@@ -58,7 +51,33 @@
     font-size: 18px;
 }
 
-.specialGuy {
-    transform: translate(0px, 300);
+.signupbtn{
+    transform: translate(0px, 150px);
     text-align: center;
+    font-size: 18px;
+}
+
+.about{
+    height: 600px;
+    width: 75%;
+    padding: 10px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    background: white;
+    box-shadow: 5px 5px 5px;
+    border-radius: 25px;
+}
+
+.about h1{
+    margin: 40px;
+}
+
+#reference{
+    font-size: 12px;
+}
+
+.about p{
+    margin: 20px;
 }

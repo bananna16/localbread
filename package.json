@@ -1,0 +1,22 @@
+{
+  "name": "localbread",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bananna16/localbread.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bananna16/localbread/issues"
+  },
+  "homepage": "https://github.com/bananna16/localbread#readme",
+  "description": "",
+  "dependencies": {
+    "firebase": "^8.2.9"
+  }
+}
