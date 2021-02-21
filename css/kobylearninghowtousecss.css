@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    background-image: "images/LB-desktop-startup-bg.png";
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 380px;
+    height: 480px;
+    position: absolute;
+    margin: 6% auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.login-button{
+    top: 0px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    width: 100px;
+    height: 30px;
+}

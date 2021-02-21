@@ -1,6 +1,15 @@
 #startimage {
-    height: 100%;
     width: 100%;
+    width: 100%;
+}
+
+#logoimage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -50%);
+    height: 25%;
 }
 
 body {
@@ -8,21 +17,44 @@ body {
     margin: 0;
 }
 
+#map {
+    height: 700px;
+}
+
 .container {
     position: relative;
     width: 100%;
   }
-  
+
   /* Style the button and place it in the middle of the container/image */
+  .container .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: orange;
+    color: brown;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn2:hover {
+    background-color: orangered;
+  }
+
   .container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-150%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
+    background-color: orange;
+    color: brown;
+    font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -30,5 +62,23 @@ body {
   }
   
   .container .btn:hover {
-    background-color: black;
+    background-color: orangered;
+  }
+
+  .btn .maplink{
+      font-size: 20px;
+      color: brown;
+      text-decoration: none;
+  }
+
+  .btn2 .loginlink{
+    font-size: 20px;
+    color: brown;
+    text-decoration: none;
+}
+
+/* Style for the navbar not working...*/
+  a.nav-custom {
+    font-size:200px;
+
   }
