@@ -1,69 +1,75 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html land="en">
+  <head>
+    <title>Local Bread Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/LB-icon.png" />
+    <link rel="stylesheet" href="css/kobylearninghowtousecss.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!--jquery and bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="js/firebase.js"></script>
+  </head>
 
-<head>
-  <title>Local Bread Login</title>
-  <meta charset="utf-8">
-  <link rel="icon" href="images/LB-icon.png">
-  <link rel="stylesheet" href="css/kobylearninghowtousecss.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="js/password.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-
-  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
-  <script src="/__/firebase/init.js"></script>
-  <script src="js/firebase.js"></script>
-</head>
-
-<body>
-
-
-  <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-3">
-    <!--<a class="navbar-brand" href="index.html">Local Bread</a> -->
-    <a class="navbar-brand" href="index.html" style="width: 20%;"><img id="icon" src="images/locaLBread-logo.png"
-        class="d-inline" alt="Official LocalBread logo"></a>
-    <ul class="nav navbar-nav nav-custom ml-auto">
-      <!-- You want to give the active class to the page that you are on -->
-      <li class="nav-item btn pl-4"><a class="nav-link d-flex" href="map.html">Map</a></li>
-      <li class="nav-item btn"><a class="nav-link d-flex" href="about.html">About</a></li>
-      <li class="nav-item btn active"><a class="nav-link d-flex" href="login.html">Login</a></li>
-    </ul>
-  </nav>
-  <div class="align">
-    <img class="startimage" src="images/LB-desktop-startup-bg.png" />
-    <div class="form-box">
-      <h3>Login</h3>
-      <form id="logInForm">
-        <label for="email">E-mail:</label><br>
-        <input type="text" id="email" name="email"><br><br>
-        <label for="pw">Password:</label>
-        <input type="password" id="pw" name="pw"><br>
-        <input type="checkbox" id="showpw" onclick="showPass()">
-        <label for="showpw">Show password</label><br>
-      </form>
-      <a href="foodform.html">
-        <button class="login-button" onClick="processLogIn()">
-          Log in!
-        </button>
-      </a>
-      <div class="signupbtn">
-        <a href="signup.html">
-          New to Local Bread? Sign up here!
+  <body>
+    <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-3">
+      <!--<a class="navbar-brand" href="index.html">Local Bread</a> -->
+      <a class="navbar-brand" href="index.html" style="width: 20%"
+        ><img
+          id="icon"
+          src="images/locaLBread-logo.png"
+          class="d-inline"
+          alt="Official LocalBread logo"
+      /></a>
+      <ul class="nav navbar-nav nav-custom ml-auto">
+        <!-- You want to give the active class to the page that you are on -->
+        <li class="nav-item btn pl-4">
+          <a class="nav-link d-flex" href="map.html">Map</a>
+        </li>
+        <li class="nav-item btn">
+          <a class="nav-link d-flex" href="about.html">About</a>
+        </li>
+        <li class="nav-item btn active">
+          <a class="nav-link d-flex" href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="align">
+      <img class="startimage" src="images/LB-desktop-startup-bg.png" />
+      <div class="form-box">
+        <h3>Login</h3>
+        <form id="logInForm">
+          <label for="email">E-mail:</label><br />
+          <input type="text" id="email" name="email" /><br /><br />
+          <label for="pw">Password:</label>
+          <input type="password" id="pw" name="pw" /><br />
+          <input type="checkbox" id="showpw" onclick="showPass()" />
+          <label for="showpw">Show password</label><br />
+        </form>
+        <a href="foodform.html">
+          <button class="login-button" onClick="processLogIn()">Log in!</button>
         </a>
+        <div class="signupbtn">
+          <a href="signup.html"> New to Local Bread? Sign up here! </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="js/firebase.js"></script>
-  <script src="js/login.js"></script>
-</body>
-
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/password.js"></script>
+  </body>
 </html>
