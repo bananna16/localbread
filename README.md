@@ -6,8 +6,8 @@ Local Bread is an app where food retail stores and restaurants can make postings
 
 ## How to use
 
-Simply clone this directory by using ```git clone https://github.com/bananna16 ```
-You can run our project in a web application by running the index.htlm file. As this app is meant to be used with a community rather than individually, the app should be used over the link [localbread.web.app](https://localbread.web.app).
+Simply clone this directory by using ```git clone https://github.com/bananna16/localbread.git```
+You can run our project in a web application by running the index.html file. As this app is meant to be used with a community rather than individually, the app should be used over the link [localbread.web.app](https://localbread.web.app).
 
 ## Technology Stack
 We used HTML, CSS, JavaScript and Bootstrap for the front-end development. We also used google maps through the JavaScript API to include the map of the available locations for food. We also have some firebase code, but was unable to get it up and running.
