@@ -18,17 +18,23 @@
     left: 50%;
     transform: translate(-50%, 0%);
     width: 380px;
-    height: 480px;
+    height: 500px;
     position: absolute;
     margin: 6% auto;
     background: #fff;
     padding: 10px;
 }
 
-.login-button{
-    top: 220px;
+.signup-button{
+    /*
+    top: 90%;
+    right: 50%;
+    transform: translate(-20px, 0%);
+    */
+    top: 88%;
     left: 50%;
     transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, -50%);
     position: absolute;
     background-color: #DAB076;
     border-style: solid;
@@ -36,12 +42,25 @@
     width: 100px;
     height: 40px;
     color: #513700;
-    font-size: 20px;
     border-radius: 10px;
 }
 
 .form-box h3{
     text-align: center;
+}
+
+#name {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#org {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
 }
 
 #email {
@@ -58,7 +77,14 @@
     font-size: 18px;
 }
 
-.specialGuy {
-    transform: translate(0px, 300);
-    text-align: center;
+#confirmpw {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#logreg {
+    position: absolute;
+    width: 100%;
 }

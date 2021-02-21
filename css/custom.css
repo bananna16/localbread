@@ -12,6 +12,15 @@
     height: 25%;
 }
 
+#icon {
+  width: 10%;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -33,17 +42,19 @@ body {
     left: 50%;
     transform: translate(50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: orange;
-    color: brown;
+    background-color: #DAB076;
+    color: #513700;
     font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7E5F1F;
   }
   
   .container .btn2:hover {
-    background-color: orangered;
+    background-color: #a18153;
   }
 
   .container .btn {
@@ -52,33 +63,37 @@ body {
     left: 50%;
     transform: translate(-150%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: orange;
-    color: brown;
+    background-color: #DAB076;
+    color: #513700;
     font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7E5F1F;
   }
   
   .container .btn:hover {
-    background-color: orangered;
+    background-color: #a18153;
   }
 
   .btn .maplink{
       font-size: 20px;
-      color: brown;
+      color: #513700;
       text-decoration: none;
+      border-color: #7E5F1F;
   }
 
   .btn2 .loginlink{
     font-size: 20px;
-    color: brown;
+    color: #513700;
     text-decoration: none;
+    border-color: #7E5F1F;
 }
 
 /* Style for the navbar not working...*/
-  a.nav-custom {
+  a .nav-custom {
     font-size:200px;
 
   }

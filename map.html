@@ -4,34 +4,29 @@
 <head>
     <title>Local Bread</title>
     <link rel="icon" href="images/LB-icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Nav Bar / Bootstrap -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
-    <nav class="navbar sticky-top navbar-inverse">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
             <div class="navbar-header">
                 <!--<a class="navbar-brand" href="index.html">Local Bread</a> -->
-                <img src="images/locaLBread-logo.png" class="d-inline w-50" alt="Official LocalBread logo">
+                <img id="icon" src="images/locaLBread-logo.png" class="d-inline" alt="Official LocalBread logo">
             </div>
             <ul class="nav navbar-nav nav-custom">
                 <!-- You want to give the active class to the page that you are on -->
-                <li><a href="map.html">Map</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link d-flex" href="map.html">Map</a></li>
+                <li class="nav-item"><a class="nav-link d-flex" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link d-flex" href="login.html">Login</a></li>
             </ul>
-        </div>
     </nav>
     <div class="container">
         <h1>Map</h1>
