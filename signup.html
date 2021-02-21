@@ -4,7 +4,7 @@
 <head>
     <title>Local Bread</title>
     <link rel="icon" href="images/LB-icon.png">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/signup.css">
     <!-- Nav Bar / Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,19 +30,32 @@
         </div>
     </nav>
     <img id="startimage" class="py-0 my-0" src="images/LB-desktop-bg-nolines.png" />
-    <strong><text>Add a Pickup Location</text></strong>
+    <strong><text>Sign Up</text></strong>
     <form>
         <div class="questions">
-            <label for="rname">Resturant Name: </label><br>
-            <input type="text" id="rname"><br>
-            <label for="address">Address: </label><br>
-            <input type="text" id="address"><br>
-            <label for="time">Pickup Time: </label><br>
-            <input type="text" id="time"><br>
-            <label for="moredetails">More Details: </label><br>
-            <input type="text" id="moredetails"><br><br>
+            <label for="name">Name (First and Last): </label><br>
+            <input type="text" id="name"><br>
+            <label for="resturant">Associated Resturant: </label><br>
+            <input type="text" id="resturant"><br>
+            <label for="email">Email: </label><br>
+            <input type="text" id="email"><br>
+            <label for="password">Password: </label><br>
+            <input type="text" id="password"><br>
+            <label for="password2">Confirm Password: </label><br>
+            <input type="text" id="password2"><br><br>
             <input type="submit" value="Submit">
         </div>
+
+        <img class="startimage" src="images/LB-desktop-startup-bg.png" />
+
+    <div class="form-box">
+        <h3>Login</h3>
+        <form>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email"><br><br>
+            <label for="pw">Password:</label>
+            <input type="text" id="pw"><br>
+        </form>
     </form>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->

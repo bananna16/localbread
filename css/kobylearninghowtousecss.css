@@ -26,10 +26,44 @@
 }
 
 .login-button{
-    top: 0px;
-    left: 50%;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
     position: absolute;
     background: black;
     width: 100px;
     height: 30px;
+}
+
+.reg-button{
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 0%);
+    position: absolute;
+    background: black;
+    width: 100px;
+    height: 30px;
+}
+
+.form-box h3{
+    text-align: center;
+}
+
+#email {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#pw {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#logreg {
+    position: absolute;
+    width: 100%;
 }

@@ -3,26 +3,55 @@
 
 <head>
   <title>Local Bread Login</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/kobylearninghowtousecss.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
 
 <body>
-  <div class="container">
-    <img id="startimage" src="images/LB-desktop-startup-bg.png" />
-    <!--im trying to set up firebase auth here:-->
-    <!-- "OKAY." -Koby -->
-    <div id="firebaseui-auth-container">test</div>
-    <div id="loader">Loading...</div>
+  <!-- This is a comment -->
+  <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
+  <nav class="navbar navbar-inverse" style="margin: 0">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Local Bread</a>
+      </div>
+      <ul class="nav navbar-nav nav-custom">
+        <!-- You want to give the active class to the page that you are on -->
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container" style="padding: 0">
+    <img class="startimage" src="images/LB-desktop-startup-bg.png" />
 
     <div class="form-box">
-        <form></form>
-      <a href="map.html">
-        <button class="login-button">
-        </button>
-      </a>
+        <h3>Login</h3>
+        <form>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email"><br><br>
+            <label for="pw">Password:</label>
+            <input type="text" id="pw"><br>
+        </form>
+        <div class="logreg">
+            <a href="map.html">
+                <button class="login-button">
+                </button>
+            </a>
+            <a href="map.html">
+                <button class="reg-button">
+                </button>
+            </a>
+        </div>
     </div>
   </div>
 
