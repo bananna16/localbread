@@ -18,9 +18,7 @@
     <!--firebase scripts-->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
-    <script src="/__/firebase/init.js"></script>
-    <script src="js/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
   </head>
 
   <body>
@@ -59,17 +57,13 @@
           <input type="checkbox" id="showpw" onclick="showPass()" />
           <label for="showpw">Show password</label><br />
         </form>
-        <a href="foodform.html">
-          <button class="login-button" onClick="processLogIn()">Log in!</button>
-        </a>
-        <div class="signupbtn">
-          <a href="signup.html"> New to Local Bread? Sign up here! </a>
-        </div>
+          <button class="login-button" onclick="processLogIn()">Log in!</button>
+          <button class="signup-button" onclick="processSignUp()">Sign up!</button>
+          <button class="signout-button" onclick="processSignOut()">Sign out!</button>
       </div>
     </div>
 
     <script src="js/firebase.js"></script>
-    <script src="js/login.js"></script>
     <script src="js/password.js"></script>
   </body>
 </html>
