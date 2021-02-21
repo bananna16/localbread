@@ -1,15 +1,24 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
 
-.form-box{
+.img{
+    height: 100%;
+    width: 100%;
+    background-image: "images/LB-desktop-startup-bg.png";
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
 
+.form-box{
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 380px;
-    height: 450px;
+    height: 550px;
     position: absolute;
     margin: 6% auto;
     background: #fff;
@@ -18,10 +27,16 @@ body{
     border-radius: 25px;
 }
 
-.login-button{
-    top: 60%;
+.signup-button{
+    top: 90%;
     left: 50%;
     transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, -50%);
+    /*
+    top: 90%;
+    right: 50%;
+    transform: translate(-20px, 0%);
+    */
     position: absolute;
     background-color: #DAB076;
     border-style: solid;
@@ -29,12 +44,25 @@ body{
     width: 100px;
     height: 40px;
     color: #513700;
-    font-size: 20px;
     border-radius: 10px;
 }
 
 .form-box h3{
     text-align: center;
+}
+
+#name {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#org {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
+    font-size: 18px;
 }
 
 #email {
@@ -51,33 +79,14 @@ body{
     font-size: 18px;
 }
 
-.signupbtn{
-    transform: translate(0px, 150px);
-    text-align: center;
+#confirmpw {
+    width: 100%;
+    padding: 0px;
+    height: 30px;
     font-size: 18px;
 }
 
-.about{
-    height: 600px;
-    width: 75%;
-    padding: 10px;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0);
+#logreg {
     position: absolute;
-    background: white;
-    box-shadow: 5px 5px 5px;
-    border-radius: 25px;
-}
-
-.about h1{
-    margin: 40px;
-}
-
-#reference{
-    font-size: 12px;
-}
-
-.about p{
-    margin: 20px;
+    width: 100%;
 }

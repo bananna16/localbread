@@ -1,56 +1,52 @@
-var firebase = require('firebase');
-var firebaseui = require('firebaseui');
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
+// Firebase App (the core Firebase SDK) is always required and must be listed first
+import firebase from "firebase/app";
+// If you are using v7 or any earlier version of the JS SDK, you should import firebase using namespace import
+// import * as firebase from "firebase/app"
 
-firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in 
-    var user = userCredential.user;
+// If you enabled Analytics in your project, add the Firebase SDK for Analytics
+import "firebase/analytics";
+
+// Add the Firebase products that you want to use
+import "firebase/auth";
+import "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDvovXPcD_0MdIUQ7HYHq4tnXloru-enns",
+  authDomain: "localbread-fea00.firebaseapp.com",
+  databaseURL: "https://localbread-fea00-default-rtdb.firebaseio.com",
+  projectId: "localbread-fea00",
+  storageBucket: "localbread-fea00.appspot.com",
+  messagingSenderId: "671775974189",
+  appId: "1:671775974189:web:10ab59d4db6e0001a6a9a4",
+  measurementId: "G-37GCPQP7CK"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+const auth = firebase.auth();
+
+// create instance of Google provider
+var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
     // ...
-  })
-  .catch((error) => {
+  }).catch((error) => {
+    // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ..
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
   });
-
-ui.start('#firebaseui-auth-container', {
-  signInOptions: [
-    {
-      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      requireDisplayName: false
-    }
-  ]
-});
-
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-
-var uiConfig = {
-    callbacks: {
-      signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-        // User successfully signed in.
-        // Return type determines whether we continue the redirect automatically
-        // or whether we leave that to developer to handle.
-        return true;
-      },
-      uiShown: function() {
-        // The widget is rendered.
-        // Hide the loader.
-        document.getElementById('loader').style.display = 'none';
-      }
-    },
-    // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-    signInFlow: 'popup',
-    signInSuccessUrl: 'map.html',
-    signInOptions: [
-      // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>',
-    // Privacy policy url.
-    privacyPolicyUrl: '<your-privacy-policy-url>'
-  };
-
-  ui.start('#firebaseui-auth-container', uiConfig);

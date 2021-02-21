@@ -2,10 +2,10 @@
 <html land="en">
 
 <head>
-  <title>Local Bread Add Food Pickup</title>
+  <title>Local Bread</title>
   <meta charset="utf-8">
   <link rel="icon" href="images/LB-icon.png">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/kobylearninghowtousecss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
   <!-- Here, I am writing a NavBar intended to be included in every page except the home page -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-3">
     <!--<a class="navbar-brand" href="index.html">Local Bread</a> -->
@@ -32,38 +31,49 @@
     <ul class="nav navbar-nav nav-custom ml-auto">
       <!-- You want to give the active class to the page that you are on -->
       <li class="nav-item btn pl-4"><a class="nav-link d-flex" href="map.html">Map</a></li>
-      <li class="nav-item btn"><a class="nav-link d-flex" href="about.html">About</a></li>
+      <li class="nav-item btn active"><a class="nav-link d-flex" href="about.html">About</a></li>
       <li class="nav-item btn"><a class="nav-link d-flex" href="login.html">Login</a></li>
     </ul>
   </nav>
 
   <div class="align">
     <img class="startimage" src="images/LB-desktop-startup-bg.png" />
-
-    <div class="form-box">
-      <h3>Add Food Pickup</h3>
-      <form>
-        <label for="org">Organization:</label>
-        <input type="text" id="org"><br><br>
-        <label for="address">Address:</label><br>
-        <input type="text" id="address"><br><br>
-        <label for="food">Type of Food:</label>
-        <input type="text" id="food"><br><br>
-        <label for="time">Pickup Time:</label>
-        <input type="text" id="time"><br><br>
-        <label for="info">Extra Information:</label><br>
-        <input type="text" id="info"><br>
-      </form>
-      <a href="foodform.html">
-        <button class="signup-button">
-          Submit
-        </button>
-      </a>
+    <div class="about">
+      <h1>What is Local Bread?</h1>
+      <p>
+        Local Bread is an app where food retail stores and restaurants can make postings about surplus food that would
+        potentially become waste. People using the app can see these postings which include detailed information like
+        the type of food, allergy information, and expiration date, as well as the location of where the food is being
+        delivered.
+      </p>
+      <p>
+        This app is designed for providing an additional avenue for people and their families to meet their nutritional
+        needs,
+        who otherwise would struggle to make ends meet. It addresses the ongoing issue of immense food waste in the US.
+        The US
+        EPA reported in 2020 that food retail and hospitality sectors generated approximately 12.6 million tons of food
+        waste, of
+        which only 24% was donated to food banks or other people, while 31% was landfilled.<sup>1</sup>
+      </p>
+      <p>
+        We hope that Local Bread can be utilized by communities across the nation to serve those people most in need.
+        Whatever
+        sector of society you hail from, we hope that you can use Local Bread for your own help or to help those you
+        know and
+        those around you!
+      </p>
+      <p><i>- The Local Bread Team</i></p>
+      <p id="reference">
+        1.
+        <a
+          href="https://www.epa.gov/sites/production/files/2020-06/documents/food_measurement_methodology_scoping_memo-6-18-20.pdf">
+          EPA. <i>Wasted Food Measurement Methodology Scoping Memo</i>. July 2000.
+        </a>
+      </p>
     </div>
-  </div>
 
+    <script src="js/custom.js"></script>
 
-  <script src="js/custom.js"></script>
 </body>
 
 </html>
