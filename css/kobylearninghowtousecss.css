@@ -19,7 +19,37 @@ body{
 }
 
 .login-button{
-    top: 60%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: #DAB076;
+    border-style: solid;
+    border-color: #7E5F1F;
+    width: 100px;
+    height: 40px;
+    color: #513700;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.signup-button{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: #DAB076;
+    border-style: solid;
+    border-color: #7E5F1F;
+    width: 100px;
+    height: 40px;
+    color: #513700;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.signout-button{
+    top: 90%;
     left: 50%;
     transform: translate(-50%, 0%);
     position: absolute;

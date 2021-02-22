@@ -2,7 +2,7 @@ function processLogIn() {
   var email = document.getElementById("email").value;
   var pw = document.getElementById("pw").value;
 
-  firebase.auth().signInWithEmailAndPassword(email, password)
+  firebase.auth().signInWithEmailAndPassword(email, pw)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
